@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/gamas.js"></script>
+
+    <title>Gamas</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <h1 class="text-center title">ALQUILER DE CARROS</h1>
+            </a>
+            <nav class="nav">
+                <a href="gama.html">Gamas</a>
+                <a href="carro.html">Carros</a>
+                <a href="cliente.html">Clientes</a>
+                <a href="mensage.html">Mensajes</a>
+                <a href="reservacion.html">Reservaciones</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class='container container-table'>
+        <h4>Tabla Gama</h4>
+        <div class='table-responsive'>
+            <table class='table' id='gama-table'>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Carros</th>
+                    <th class="accionTd">Acción</th>
+                </tr>
+            </table>
+        </div>
+        <button class='button' id="upd-gama">Actualizar Tabla</button>
+        <form>
+            <h5>Registo de Gama</h5>
+            <div class='mb-3'>
+                <label for='Name'>Nombre</label>
+                <input type="text" class="form-control" placeholder="Escribe Nombre de Gama" id='Name-Gama' required/>
+            </div>
+            <div class='mb-3'>
+                <label for='Description'>Descripción</label>
+                <input type="text" class="form-control" placeholder="Escribe la Descripcion" id='Description-Gama' required/>
+            </div>
+            <div>
+                <input type="submit" class='button' id="Add-Gama" value="Agregar">
+            </div>
+        </form>
+        
+        <div class="container-all" id="container-all">        
+            <div class="popup" id="popup">
+                <div class='contenedor-popup'>
+                    <h3>ACTUALIZAR</h3>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <label for="Name-upd-gama">Nombre</label>
+                            <input class="form-control" id='Name-upd-gama' type="text" placeholder="Nombre" required>
+
+                            <label for="Description-upd-gama">Descripción</label>
+                            <input class="form-control" id='Description-upd-gama' type="text" placeholder="Descripción" required>                            
+                            <a href="#" class="btn-submit button" id="btn-upd-gama">Actualizar</a>
+                        </div>
+                    </form>
+                </div>
+                <a href="#" id="btn-exit-popup" class="btn-exit-popup"><span>x</span></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        <div class="container contenedor-footer">
+            <nav class="nav-footer">
+                <a href="#">Nosotros</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2021 &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>

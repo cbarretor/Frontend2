@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/**GLOBAL**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins','Montserrat', sans-serif;
+    
+}
+
+
+body{
+    background-color:  #dee2e6;
+}
+
+a{
+    text-decoration:none;
+}
+img{
+    max-width: 100%;
+}
+
+.table-responsive {
+    margin-bottom: 10px;
+}
+
+/**UTILIDADES**/
+.container-table{   
+    margin-bottom: 50px;
+    padding: 15px;
+    border: 1px groove #B5B5B5;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.1)
+}
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.relleno{
+    margin: 16px 0px; 
+}
+
+.d-block{
+    display: block!important;
+}
+
+.table th, .table td{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+}
+
+.container-table h4{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.container-table table{
+    margin-bottom: 20px;
+}
+.container-table table th, .container-table table td {
+    max-width: 400px;
+    max-height: 200px;
+    /*overflow-x: auto;*/
+    word-wrap: break-word;
+}
+
+.accionTd{
+    min-width: 176px;
+}
+
+.container-table h5{
+    font-weight: 600;
+    font-size: 23px;
+    margin: 23px 0px;
+}
+
+div textarea {
+    max-height: 100px;
+}
+
+/** BOTONES **/
+
+.button{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #0d6efd;
+    padding: 5px 10px;
+    border: 1px solid white;
+    position: relative;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.button:hover{
+    color: #0d6efd;
+    background-color: #fff;
+    border: 1px solid #0d6efd;
+    transition: all 300ms ease;
+
+}
+
+.del-button{
+    background-color: #FF2A16;
+    padding: 5px 10px;
+    border: none;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 50px;
+}
+.del-button:hover{
+    background-color: #fff;
+    color: #FF2A16;
+    border: 1px solid #FF2A16;
+}
+
+.boton{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.boton-amarillo{
+    background-color: #e08709;
+}
+
+/** HEADER **/
+.title{
+    text-align: left;
+    color: rgb(252, 166, 6);
+    padding: 10px;
+    font-size: 50PX;
+    margin-bottom: 28rem;
+}
+
+.header{
+    background-color: #0d6efd;
+    /*rgb(12, 119, 206);*/
+    margin-bottom: 2.5rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3rem 3rem 3rem;
+}
+.nav a{
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: #999;
+}
+
+/*table{
+
+    border: 1px solid #dee2e6;
+}*/
+
+
+
+/** RESERVACIONES **/
+
+
+
+#select-end-date, #select-start-date{
+    max-width: 180px;
+    display: inline;
+    margin: 20px 10px;
+}
+
+#Vs-Title{
+    margin-top: 130px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+#Completed-Vs-Cancelled{
+    display: flex;
+    width: 100%;
+}
+
+#Completed-Vs-Cancelled h5{
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #0d6efd;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 3%;
+}
+
+#Completed, #Cancelled{
+    font-size: 150px;
+    max-width: 150px;
+}
+
+
+/** Top Clientes **/
+#Top-Clientes{
+    margin-top: 70px;
+}
+
+/** FOOTER **/
+footer{
+    background-color: #333;
+    margin: 0;
+}
+
+.copyright{
+    margin: 0;
+    color: #fff;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-footer{
+    display: block;
+}
+
+.nav-footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;/*es igual a 18px*/
+    margin-right: 20px;
+}

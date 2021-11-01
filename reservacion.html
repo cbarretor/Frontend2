@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/reservations.js"></script>
+
+    <title>Reservaciones</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <h1 class="text-center title">ALQUILER DE CARROS</h1>
+            </a>
+            <nav class="nav">
+                <a href="gama.html">Gamas</a>
+                <a href="carro.html">Carros</a>
+                <a href="cliente.html">Clientes</a>
+                <a href="mensage.html">Mensajes</a>
+                <a href="reservacion.html">Reservaciones</a>
+            </nav>
+        </div>
+    </header>
+
+        <div class='container container-table'>
+            <h4>Tabla Reservaciones</h4>
+            <div class='table-responsive'>
+                <table class='table' id='reservation-table'>
+                    <tr>
+                        <th>ID Reservación</th>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Entrega</th>
+                        <th>Estado</th>
+                        <th>Carro</th>
+                        <th>Cliente</th>
+                        <th>Calificación</th>
+                        <th class='accionTd'>Acción</th>
+                    </tr>
+                </table>
+            </div>
+            <button class='button' id="upd-reservation">Actualizar Tabla</button>
+            <form>
+                <h5>Agregar Reservación</h5>
+                <div class='mb-3'>
+                    <label for='Start-Date'>Fecha Inicio</label>
+                    <input type="date" class="form-control" placeholder="Escribe la Fecha" id='Date-Start-Reservation' required/>
+                </div>
+                <div class='mb-3'>
+                    <label for='End-Date'>Fecha Entrega</label>
+                    <input type="date" class="form-control" placeholder="Escribe la Fecha" id='Date-Devolution-Reservation' required/>
+                </div>
+                <div class='mb-3'>
+                    <label for='Client'>Cliente</label>
+                    <select class="form-control" id='Client-Reservation' type="text" required>
+                        <option hidden value="">Seleccionar Cliente</option>
+                    </select>
+                </div>
+                <div class='mb-3'>
+                    <label for='Car'>Carro</label>
+                    <select class="form-control" id='Car-Reservation' type="text" required>
+                        <option hidden value="">Seleccionar Carro</option>
+                    </select>
+                </div>
+                <button class='button' id="Add-Reservation">Agregar</button>
+            </form>
+            
+            <div class="container-all" id="container-all">
+            
+                <div class="popup" id="popup">
+                    <div class='contenedor-popup'>
+                        <h3>ACTUALIZAR</h3>
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <input class="form-control" id='Start-upd-reservation' type="date" placeholder="fecha inicio" required>
+                                <input class="form-control" id='Devolution-upd-reservation' type="date" placeholder="Fecha devolución" required>
+                                <select class="form-control" id='Status-upd-reservation' type="text" required>
+                                    <option hidden value="">Seleccionar estado</option>
+                                    <option>Programed</option>
+                                    <option>Completed</option>
+                                    <option>Cancelled</option>
+                                </select>
+                                <a href="#" class="btn-submit button" id="btn-upd-reservation">Actualizar</a>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="#" id="btn-exit-popup" class="btn-exit-popup"><span>x</span></a>
+                </div>
+            </div>
+            <div class='container-search-reservation'>
+                <h5>REPORTES DE RESERVACIONES</h5>
+                <form >
+                    <label for="select-start-date">Desde</label>
+                    <input type="date" class="form-control" id="select-start-date" required>
+                    <label for="select-end-date">Hasta</label>
+                    <input type="date" class="form-control" id="select-end-date" required>
+                    <button class="button" id="Search-reservation">Buscar</button>
+                </form>
+                <h5 id="Reservation-count"></h5>
+                <div id="container-vs">
+                    <div id="Completed-Vs-Cancelled">
+                        <h5 id="H5-Completed">Completadas <br><span id="Completed">00</span></h5>
+                        <h6 id="Vs-Title">VS</h6>
+                        <h5 id="H5-Cancelled">Canceladas <br><span id="Cancelled">00</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="copyright">
+        <div class="container contenedor-footer">
+            <nav class="nav-footer">
+                <a href="#">Nosotros</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2021 &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
